@@ -1,17 +1,4 @@
-from flask import Flask
 import pandas as pd
-
-print('outside function')
-
-app = Flask(__name__)
-
-
-@app.route('/home')
-def printHi():
-    return 'hello'
-
-
-app.run()
 
 
 def lambda_handler(event, context):
